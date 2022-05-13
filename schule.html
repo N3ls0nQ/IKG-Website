@@ -15,15 +15,17 @@
 <body>
     <div class="top__border"></div>
     <header>
-        <nav class="navbar">
+        <nav class="navbar shadow-diffuse">
             <div class="logo">
                 <img src="./assets/images/IKG-Logo.jpg" alt="logo">
             </div>
             <div class="navbar__item">
                 <a href="https://n3ls0nq.github.io/IKG-Website/">HOME</a>
+                <!-- <a href="./">HOME</a> -->
             </div>
             <div class="navbar__item">
                 <a href="https://n3ls0nq.github.io/IKG-Website/schule.html">SCHULE</a>
+                <!-- <a href="/schule.html">SCHULE</a> -->
             </div>
             <div class="navbar__item">
                 <a href="#">AKTUELLES</a>
@@ -42,10 +44,11 @@
     </header>
     
     <section class="ueber_uns_section">
-        <h1 class="welcome__header">Herlich Willkommen am IKG</h1>
-        <p>Runter scrollen!</p>
+        <h1 class="welcome__header">Herzlich Willkommen am IKG</h1>
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/1nmlU9B2aNc?autoplay=0" title="IKG-Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe width="100%" height="720" src="https://www.youtube.com/embed/qIa4RDOwYMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <section class="placeholder__section"></section>
-        <div class="ikg__header">
+        <section class="ikg__header">
             <h1>Unsere Schule</h1>
             <!-- <hr> -->
             <p>Das Immanuel-Kant – Gymnasium ist eine junge Schule in einem modernen Gebäude, dessen farbige Akzente, Helligkeit und Transparenz dem Leben an unserem Gymnasium entsprechen.<br><br>
@@ -54,10 +57,29 @@
                 
                 Wir fühlen uns in unserer pädagogischen Arbeit unserem Namensgeber verpflichtet, der über das richtige Verhalten und was den Einzelnen in dieser Welt leitet nachgedacht hat. Kant ist bis heute aktuell geblieben. Er erhebt das selbständige und selbstbewusste Denken zur obersten Instanz der Mündigkeit. Sein „sapere aude“ – habe Mut, dich deines eigenen Verstandes zu bedienen – ist gerade heute, im Zeitalter der Datenflut und Medienbeeinflussung ein zu beherzigender Hinweis.<br><br>
                 
-                Seine Gedanken zur Moral, sein kategorischer Imperativ – „Handle so, dass die Maxime deines Willens jederzeit zugleich als Prinzip einer allgemeinen Gesetzgebung gelten könnte.“ – und zum Weltfrieden haben bis heute Bestand.</p>
+                Seine Gedanken zur Moral, sein kategorischer Imperativ – „Handle so, dass die Maxime deines Willens jederzeit zugleich als Prinzip einer allgemeinen Gesetzgebung gelten könnte.“ – und zum Weltfrieden haben bis heute Bestand.
+            </p>
+
+            
+        </section>
+    </section>
+
+    <div class="ikg__header schulleitung__section">
+        <h1>Die Schulleitung</h1> 
+        <div class="schulleitung__section__container">
+            <user-card class="card" name="Susanne Schneider-Frey" title="Schulleiterin" avatar="https://randomuser.me/api/portraits/women/4.jpg"></user-card>
+            <user-card name="Andreas Kübler" title="stellvertretender Schulleiter" avatar="https://randomuser.me/api/portraits/men/1.jpg"></user-card>
+            <user-card name="Severidt" title="Abteilungsleiter" avatar="https://randomuser.me/api/portraits/women/0.jpg"></user-card>
+            <user-card name="Anne Neudeck" title="Abteilungsleiterin" avatar="https://randomuser.me/api/portraits/women/1.jpg"></user-card>
+            <user-card name="Christian Bracht" title="Abteilungsleiter" avatar="https://randomuser.me/api/portraits/men/9.jpg"></user-card>
+            <!-- <p>v. links n. rechts: Herr Bracht (Abteilungsleiter), Herr Kübler (stellvertr. Schulleiter), Frau Schneider-Frey (Schulleiterin), Frau Dr. Severidt (Abteilungsleiterin), Frau Neudeck (Abteilungsleiterin)</p>
+            <img src="./assets/images/Schulleitung.jpg" alt="" srcset="">   -->
         </div>
 
-    </section>
+    </div>
+
+    
     <script src="./app.js"></script>
+    <script src="./UserCard.js"></script>
 </body>
 </html>
