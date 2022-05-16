@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <title>Immanuel-Kant-Gymnasium | Leinfelden-Echterdingen</title>
 
 </head>
@@ -20,12 +22,20 @@
                 <img src="./assets/images/IKG-Logo.jpg" alt="logo">
             </div>
             <div class="navbar__item">
-                <a href="https://n3ls0nq.github.io/IKG-Website/">HOME</a>
-                <!-- <a href="./">HOME</a> -->
+                <!-- <a href="https://n3ls0nq.github.io/IKG-Website/">HOME</a> -->
+                <a href="./">HOME
+                    
+                </a>
             </div>
             <div class="navbar__item">
-                <a href="https://n3ls0nq.github.io/IKG-Website/schule.html">SCHULE</a>
-                <!-- <a href="/schule.html">SCHULE</a> -->
+                <!-- <a href="https://n3ls0nq.github.io/IKG-Website/schule.html">Schule -->
+                <a href="/schule.html" onmouseenter="showMenu()" onmouseleave="disableMenu()">SCHULE
+                    <ul class="nav__listitemdrop shadow-diffuse">
+                        <li>Schulleitung</li>
+                        <li>Sekretariat & Hausmeister</li>
+                        <li>Kollegium</li>
+                    </ul>
+                </a>
             </div>
             <div class="navbar__item">
                 <a href="#">AKTUELLES</a>
@@ -40,14 +50,43 @@
                     </button> -->
                 </form>
             </div>
+            <div class="menu__btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
         </nav>
     </header>
+
+    <div class="drawer">
+        <ul class="drawer__ul">
+            <li class="drawer__li">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="drawer__li">
+                <a href="./index.html">Schule</a>
+            </li>
+            <li class="drawer__li">
+                <a href="./index.html">Aktuelles</a>
+            </li>
+        </ul>
+    </div>
     
     <section class="ueber_uns_section">
         <h1 class="welcome__header">Herzlich Willkommen am IKG</h1>
-        <iframe width="100%" height="720" src="https://www.youtube.com/embed/1nmlU9B2aNc?autoplay=0" title="IKG-Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div class="video__container">
+            <video class="ikg__video" loop autoplay width="100%" height="">
+                <source src="./assets/videos/IKG-Imagefilm Kurz.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        
+        <!-- <iframe width="100%" height="720" src="https://www.youtube.com/embed/1nmlU9B2aNc?autoplay=0" title="IKG-Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <!-- <iframe width="100%" height="720" src="https://www.youtube.com/embed/qIa4RDOwYMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <section class="placeholder__section"></section>
+        <!-- <section class="placeholder__section"></section> -->
+        
         <section class="ikg__header">
             <h1>Unsere Schule</h1>
             <!-- <hr> -->
@@ -64,18 +103,25 @@
         </section>
     </section>
 
-    <div class="ikg__header schulleitung__section">
+    <div id="schulleitung" class="ikg__header schulleitung__section">
         <h1>Die Schulleitung</h1> 
         <div class="schulleitung__section__container">
             <user-card class="card" name="Susanne Schneider-Frey" title="Schulleiterin" avatar="https://randomuser.me/api/portraits/women/4.jpg"></user-card>
             <user-card name="Andreas Kübler" title="stellvertretender Schulleiter" avatar="https://randomuser.me/api/portraits/men/1.jpg"></user-card>
-            <user-card name="Severidt" title="Abteilungsleiter" avatar="https://randomuser.me/api/portraits/women/0.jpg"></user-card>
+            <user-card name="Ebba Severidt" title="Abteilungsleiter" avatar="https://randomuser.me/api/portraits/women/0.jpg"></user-card>
             <user-card name="Anne Neudeck" title="Abteilungsleiterin" avatar="https://randomuser.me/api/portraits/women/1.jpg"></user-card>
             <user-card name="Christian Bracht" title="Abteilungsleiter" avatar="https://randomuser.me/api/portraits/men/9.jpg"></user-card>
-            <!-- <p>v. links n. rechts: Herr Bracht (Abteilungsleiter), Herr Kübler (stellvertr. Schulleiter), Frau Schneider-Frey (Schulleiterin), Frau Dr. Severidt (Abteilungsleiterin), Frau Neudeck (Abteilungsleiterin)</p>
-            <img src="./assets/images/Schulleitung.jpg" alt="" srcset="">   -->
         </div>
+    </div>
 
+    <div class="ikg__header schulleitung__section">
+        <h1>Das Sekretariat und unsere Hausmeister</h1> 
+        <div class="schulleitung__section__container">
+            <user-card name="Andrea Hossner" title="Abteilungsleiter" avatar="https://randomuser.me/api/portraits/women/0.jpg"></user-card>
+            <user-card name="Andrea Kett" title="Abteilungsleiter" avatar="https://randomuser.me/api/portraits/women/0.jpg"></user-card>
+            <user-card name="Herr Gashi" title="Abteilungsleiterin" avatar="./assets/images/Gashi.png"></user-card>
+            <user-card name="Herr Sopa" title="Abteilungsleiter" avatar="./assets/images/Sopa.jpg"></user-card>
+        </div>
     </div>
 
     
