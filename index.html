@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
 </head>
 <body>
@@ -21,12 +22,20 @@
                 <img src="./assets/images/IKG-Logo.jpg" alt="logo">
             </div>
             <div class="navbar__item">
-                <!-- <a href="https://n3ls0nq.github.io/IKG-Website/index.html">HOME</a> -->
-                <a href="/index.html">HOME</a>
+                <!-- <a href="https://n3ls0nq.github.io/IKG-Website/">HOME</a> -->
+                <a href="./">HOME
+                    
+                </a>
             </div>
             <div class="navbar__item">
-                <!-- <a href="https://n3ls0nq.github.io/IKG-Website/schule.html">SCHULE</a> -->
-                <a href="/schule.html">SCHULE</a>
+                <!-- <a href="https://n3ls0nq.github.io/IKG-Website/schule.html">Schule -->
+                <a href="/schule.html" onmouseenter="showMenu()" onmouseleave="disableMenu()">SCHULE
+                    <ul class="nav__listitemdrop shadow-diffuse">
+                        <li>Schulleitung</li>
+                        <li>Sekretariat & Hausmeister</li>
+                        <li>Kollegium</li>
+                    </ul>
+                </a>
             </div>
             <div class="navbar__item">
                 <a href="#">AKTUELLES</a>
@@ -41,13 +50,60 @@
                     </button> -->
                 </form>
             </div>
+            <div class="menu__btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
         </nav>
     </header>
 
-    <section class="home__section">
-        <!-- <img  style="width: 100%;" src="./assets/images/Mensa_Gebäude.jpg" alt="mensa"> -->
-        <h1>Immanuel-Kant-Gymnasium Leinfelden-Echterdingen</h1>
-    </section>
+    <div class="container">
+        <section class="home__section parallax">
+            <!-- <img  style="width: 100%;" src="./assets/images/Mensa_Gebäude.jpg" alt="mensa"> -->
+            <h1>Immanuel-Kant-Gymnasium</h1>
+            <h2>Leinfelden-Echterdingen</h2>
+    
+           
+        </section>
+    
+        <div style="height: 100vh; background: white" class="section">
+            <h2>hakllo</h2>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__item">
+                <img height="200px" width="200px" src="./assets/images/IKG-Logo.jpg" alt="logo">
+            </div>
+            <div class="footer__item">
+                <h1>Kontakt</h1>
+                <li>Immanuel-Kant-Gymnasium</li>
+                <li>Anemonenstraße 15</li>
+                <li>70771 Leinfelden-Echterdingen</li>
+                <li></li>
+                <li>Fon: <a href="tel:0711 1600-500">0711 1600-500</a> oder  <a href="tel:0711 1600-521">0711 1600-521</a> </li>
+                <li>Fax: 0711 1600-503</li>
+                <li>E-Mail: <a href="mailto:sekretariat.ikg@le-mail.de">sekretariat.ikg@le-mail.de</a> </li>
+            </div>
+            <div class="footer__item">
+                <h1>Sekretariat</h1>
+                <li><strong>Montag - Donnerstag</strong> </li>
+                <li>08:00 - 13:00 Uhr</li>
+                <li>13:30 - 15:00 Uhr</li>
+                <br>
+                <li><strong>Freitag</strong></li>
+                <li>08:00 - 13:30 Uhr</li>
+                <br>
+                <li><p>Darüber hinaus sind wir telefonisch, z. B. für <strong>Krankmeldungen von Schülern </strong> oder allgemeine Anfragen, auch außerhalb dieser Sprechzeiten gerne für Sie da. </p></li>
+            </div>
+            <div class="footer__item">
+                <iframe class="google__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.3358526364514!2d9.133545716176972!3d48.69906131986511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799dd3f7cb806e3%3A0x3ef2406cb6963bcb!2sImmanuel-Kant-Gymnasium%20Leinfelden-Echterdingen!5e0!3m2!1sde!2sde!4v1652897243687!5m2!1sde!2sde" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
    <script src="./app.js"></script>
 </body>
 </html>

@@ -39,4 +39,11 @@ function disableMenu(){
     item.style.opacity = "0";
 }
 
-// --------------------------
+// -------------------------- PARALLAX
+
+var parallax = document.querySelector(".parallax");
+window.addEventListener("scroll", () => {
+    let offset = window.scrollY;
+    console.log(offset)
+    parallax.style.backgroundPositionY = offset * 0.7 + "px";
+})

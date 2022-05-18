@@ -93,14 +93,38 @@ input{
     height: 30px;
 }
 
+
 .home__section{
     display: flex;
-    margin-top: 100px;
+    flex-direction: column;
+    margin-top: 80px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url(./assets/images/Mensa_Gebäude.jpg);
-    height: 80vh;
+    background-size: 100% auto;
+    background-image: url("../assets/images/Gebäude_Front.jpg");
+    /* background-attachment: fixed; */
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: #0009;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: top;
+    background-blend-mode: darken;
+    height: 90.1vh;
+}
+
+
+.home__section h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.home__section h2 {
+    color: #aaaaaa;
+    font-size: 2.4rem;
+    font-weight: 300;
 }
 
 .schulleitung__section__container{
@@ -120,7 +144,7 @@ input{
 
 .video__container{
     overflow: hidden;
-    height: 550px;
+    height: 500px;
     offset-anchor: 1px;
     display: block;
 }
@@ -128,11 +152,18 @@ input{
 .ikg__video{
     transition: all 4s ease;
     display: block;
+    position: center;
+    object-fit: cover;
+    object-position: center;
+    background-color: #000;
 }
 
 
 @media (max-width: 1100px){
     .ueber_uns_section h1 {
+        font-size: 2.3rem;
+    }
+    .home__section h1 {
         font-size: 2.3rem;
     }
 }
@@ -141,10 +172,16 @@ input{
     .ueber_uns_section h1{
         font-size: 1.6rem;
     }
+    .home__section h1{
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 400px){
     .ueber_uns_section h1{
+        font-size: 1.2rem
+    }
+    .home__section h1{
         font-size: 1.2rem
     }
 }
